@@ -27,3 +27,8 @@ null == undefined; // true (spec #2)
 0 == undefined; // false
 0 == ""; // true
  */
+
+// This algorithm has the following property:
+// Symmetry: x == y is true if, and only if, y But is not an equivalence relation because == x is true, for any values x and y.
+// NaN is not reflexive: NaN != NaN
+// Transitivity does not hold, e.g. 0 == '' and 0 == '0', but '' != '0'
