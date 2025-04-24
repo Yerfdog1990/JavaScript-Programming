@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 177
+        length: 162
         placeholder_text: |-
           func();
           console.log("[global] a:", a);
@@ -26,11 +26,14 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: W/g60tFUt7U/Hb+/Hx+8Qg26QCmH8M6K1UMHytJZCDZfBOvcwuwYSE0wHaWxBBc/zTe/S9oaV0knasiAAanBt22WZfjBbfd5ApTk7wIV0q/aYrWXejdKlpeY9VrP/bNfzoeTamqTo9Sf/5OH0FLYHsc8MFxN6M7oTuURWdeJW5Wn8ZTLwy+Cu9oE8p350DJzRlUP2sSVKwQxaYpElOpXwnQ+CUFj8JWxNiPVC2EXjG8=
         selected: false
-        status: Unchecked
+        status: Solved
         is_visible: false
     learner_created: false
   - name: test/test.js
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 24 Apr 2025 12:46:19 UTC"
 record: -1

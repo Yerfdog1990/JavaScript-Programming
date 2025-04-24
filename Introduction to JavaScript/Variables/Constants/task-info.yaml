@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 60
-        length: 5
+        length: 3
         placeholder_text: const
         initial_state:
           length: 5
@@ -12,11 +12,14 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: 0iV8NCCPfPrcuz8qxwUXSg==
         selected: false
-        status: Unchecked
+        status: Solved
         is_visible: false
     learner_created: false
   - name: test/test.js
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 24 Apr 2025 11:34:43 UTC"
 record: -1

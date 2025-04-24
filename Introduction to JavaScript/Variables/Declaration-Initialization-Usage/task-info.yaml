@@ -12,10 +12,10 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: cmXzI5TY4phGGhkKIjFmLQ==
         selected: false
-        status: Unchecked
+        status: Solved
         is_visible: false
-      - offset: 23
-        length: 8
+      - offset: 32
+        length: 0
         placeholder_text: b = 123;
         initial_state:
           length: 8
@@ -23,11 +23,14 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: ft3/KDXagmI+TWDbl9vbuw==
         selected: false
-        status: Unchecked
+        status: Solved
         is_visible: false
     learner_created: false
   - name: test/test.js
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 24 Apr 2025 12:11:08 UTC"
 record: -1
