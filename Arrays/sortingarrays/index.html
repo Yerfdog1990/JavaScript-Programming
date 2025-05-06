@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unicode Search</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #121212; color: white; }
+        input { padding: 5px; width: 300px; margin-bottom: 10px; }
+        .char { font-size: 24px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+<h2>🔍 Unicode Character Search</h2>
+<input type="text" id="search" placeholder="Enter character name or code point..." oninput="searchUnicode()">
+<div id="results"></div>
+
+<script>
+    const resultsDiv = document.getElementById('results');
+
+    function searchUnicode() {
+        const input = document.getElementById('search').value.trim().toUpperCase();
+        resultsDiv.innerHTML = '';
+
+        for (let i = 32; i <= 0x2FFF; i++) { // limited range for performance
+            const char = String.fromCodePoint(i);
+            const name = char.toUpperCase();
+
+            if (char.includes(input) || i.toString().includes(input)) {
+                const entry = document.createElement('div');
+                entry.className = 'char';
+                entry.textContent = `U+${i.toString(16).toUpperCase().padStart(4, '0')} → ${char}`;
+                resultsDiv.appendChild(entry);
+            }
+
+            if (resultsDiv.childElementCount > 100) break; // limit results
+        }
+    }
+</script>
+</body>
+</html>
