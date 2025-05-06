@@ -7,12 +7,12 @@ reduce it to a single value.
 // This method can be used to condense all values of an array into a single value:
 const originalArray1 = [1, 2, 3];
 console.log("Original array: ", originalArray1);
-const reducedArray1 = [1, 2, 3].reduce((accumulator, currentValue) => accumulator + currentValue);
+const reducedArray1 = originalArray1.reduce((accumulator, currentValue) => accumulator + currentValue);
 console.log("Reduced array: ", reducedArray1);
 
 //An optional second parameter can be passed to reduce(). Its value will be used as the first argument (specified as a)
 // for the first call to the callback (specified as function(a, b)).
 const originalArray2 = [2];
 console.log("Original array: ", originalArray2);
-reducedArray2 = [2].reduce((accumulator, currentValue, index, array) => accumulator + currentValue, 1);
+reducedArray2 = originalArray2.reduce((accumulator, currentValue, index, array) => accumulator + currentValue, 1);
 console.log("Reduced array: ", reducedArray2);
