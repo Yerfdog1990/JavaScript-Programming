@@ -14,11 +14,13 @@ console.log(b2, c2, xs);
 function area([length, height]) {
     return (length * height) / 2;
 }
+console.log(area([3, 4]));
 
 // Remove duplicates using a filter
 const uniqueArray = ['a', 1, 'a', 2, '1', 1].filter((value, index, self) => {
     return self.indexOf(value) === index;
 });
+console.log(uniqueArray);
 
 // Remove duplicates using Set
 const uniqueArrayWithSet = [...new Set(['a', 1, 'a', 2, '1', 1])];
